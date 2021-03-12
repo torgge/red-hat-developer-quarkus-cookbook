@@ -4,8 +4,8 @@ import java.util.Objects;
 import java.util.UUID;
 
 public class Teste {
-    private static final String uuid = UUID.randomUUID().toString();
-    private static final String texto = "Contrato de prestación de servicios MI CONTADOR (Datapar)\n" +
+    private static final String ID = UUID.randomUUID().toString();
+    private String texto = "Contrato de prestación de servicios MI CONTADOR (Datapar)\n" +
             "Términos y condiciones MI CONTADOR (DATAPAR)\nEntre DATAPAR S.A. proveedor de la herramienta " +
             "APP(aplicación) MI CONTADOR (DATAPAR)  y el Cliente, en adelante el USUARIO, cuyo nombre o razón " +
             "social y demás datos de identificación y contacto, así como el lugar y fecha del presente, se " +
@@ -14,11 +14,15 @@ public class Teste {
             "\nPRIMERA: OBJETO\n";
 
     public String getUuid() {
-        return uuid;
+        return ID;
     }
 
     public String getTexto() {
-        return texto;
+        return this.texto;
+    }
+
+    public void setTexto(String texto) {
+        this.texto = texto;
     }
 
     @Override

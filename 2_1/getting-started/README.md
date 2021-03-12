@@ -10,7 +10,25 @@ You can run your application in dev mode that enables live coding using:
 ```
 ./mvnw quarkus:dev
 ```
+## Compile and clean
 
+``
+./mvnw clean compile quarkus:dev
+``
+
+### To Add Extension 
+## Json serialization
+```
+./mvnw quarkus:add-extension -Dextensions="resteasy-jackson"  
+```
+## Reactive Routes ".vertex"
+```
+./mvnw quarkus:add-extension -Dextensions="quarkus-vertx-web"
+```
+## Open api
+```
+./mvnw quarkus:add-extension -Dextensions="quarkus-smallrye-openapi"
+```
 ## Packaging and running the application
 
 The application can be packaged using `./mvnw package`.
